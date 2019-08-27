@@ -1,5 +1,6 @@
 nav .navbar-nav li a{
     color: #F5D6C6 !important;
+    padding-left: 10px;
 }
 nav .navbar-nav li a:hover{
     color:#FA9A85 !important;
