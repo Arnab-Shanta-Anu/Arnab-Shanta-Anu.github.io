@@ -7,3 +7,9 @@ body{
 .nav-link:hover{
     color:#FA9A85;
 }
+.navbar-nav{
+    width: 60%;
+}
+.nav-item{
+    padding: 2rem;
+}
