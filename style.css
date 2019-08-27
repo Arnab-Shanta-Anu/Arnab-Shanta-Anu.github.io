@@ -1,15 +1,6 @@
-body{
-    background-color: #ffffff;
+nav .navbar-nav li a{
+    color: #F5D6C6 !important;
 }
-.nav-link{
-    color: #F5D6C6;
-}
-.nav-link:hover{
-    color:#FA9A85;
-}
-.navbar-nav{
-    width: 60%;
-}
-.nav-item{
-    padding: 2rem;
+nav .navbar-nav li a:hover{
+    color:#FA9A85 !important;
 }
