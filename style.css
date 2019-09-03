@@ -8,10 +8,10 @@ nav .navbar-nav li a:hover {
 .navbar-text {
   font-family: bungee, sans-serif;
   font-style: normal;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 300;
 }
-.navlink {
+.nav-link {
   font-family: pt-sans, sans-serif;
   font-style: normal;
   font-weight: 300;
