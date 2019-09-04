@@ -1,18 +1,8 @@
-nav .navbar-nav li a {
-  color: #f5d6c6 !important;
-  padding-left: 10px;
+body {
+  background: blue;
 }
-nav .navbar-nav li a:hover {
-  color: #fa9a85 !important;
+
+body h1 {
+  font-size: 35px;
 }
-.navbar-text {
-  font-family: bungee, sans-serif;
-  font-style: normal;
-  font-size: 30px;
-  font-weight: 300;
-}
-.nav-link {
-  font-family: pt-sans, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-}
+/*# sourceMappingURL=style.css.map */
