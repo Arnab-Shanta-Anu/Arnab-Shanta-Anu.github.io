@@ -1,8 +1,14 @@
-body {
-  background: blue;
+* h1,
+* h2,
+* h3 {
+  font-family: "Ubuntu Mono", monospace;
 }
 
-body h1 {
-  font-size: 35px;
+* body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: radial-gradient(#00b1fc 55%, #ffffff);
 }
 /*# sourceMappingURL=style.css.map */
