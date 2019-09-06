@@ -5,10 +5,14 @@
 }
 
 * body {
-  font-family: "Roboto", sans-serif;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body {
-  background-image: radial-gradient(#00b1fc 55%, #ffffff);
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(119.36deg, #d9e6ff 0%, rgba(92, 148, 255, 0.31) 100%);
 }
 /*# sourceMappingURL=style.css.map */
