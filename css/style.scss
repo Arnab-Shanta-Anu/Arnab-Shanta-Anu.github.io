@@ -1,21 +1,39 @@
 * {
-  h1,
-  h2,
-  h3 {
-    font-family: "Ubuntu Mono", monospace;
-  }
-  body {
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
+  margin: 0;
+  padding: 0;
 }
 body {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(
-    119.36deg,
-    #d9e6ff 0%,
-    rgba(92, 148, 255, 0.31) 100%
-  );
+  display: flexbox;
+  background: rgba(255, 33, 33, 0.664);
+
+  .navbar {
+    background: rgb(127, 91, 192);
+    height: 15vh;
+    width: 100vw;
+
+    .navbar-logo {
+      color: blue;
+    }
+    .navbar-slogan {
+      color: white;
+    }
+    .navitems {
+      .navitem-list {
+        .nav-item {
+          display: flex;
+          flex: 0 1 auto;
+          .nav-link {
+            font-size: 1.2rem;
+            padding: 0.3rem;
+            text-decoration: none;
+            color: bisque;
+          }
+          .nav-link:hover {
+            color: rgb(238, 174, 96);
+            transition: 0.8s all ease-in-out;
+          }
+        }
+      }
+    }
+  }
 }

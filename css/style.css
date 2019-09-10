@@ -1,18 +1,46 @@
-* h1,
-* h2,
-* h3 {
-  font-family: "Ubuntu Mono", monospace;
-}
-
-* body {
-  height: 100%;
+* {
   margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  padding: 0;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(119.36deg, #d9e6ff 0%, rgba(92, 148, 255, 0.31) 100%);
+  display: flexbox;
+  background: rgba(255, 33, 33, 0.664);
+}
+
+body .navbar {
+  background: #7f5bc0;
+  height: 15vh;
+  width: 100vw;
+}
+
+body .navbar .navbar-logo {
+  color: blue;
+}
+
+body .navbar .navbar-slogan {
+  color: white;
+}
+
+body .navbar .navitems .navitem-list .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+body .navbar .navitems .navitem-list .nav-item .nav-link {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  text-decoration: none;
+  color: bisque;
+}
+
+body .navbar .navitems .navitem-list .nav-item .nav-link:hover {
+  color: #eeae60;
+  -webkit-transition: 0.8s all ease-in-out;
+  transition: 0.8s all ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
