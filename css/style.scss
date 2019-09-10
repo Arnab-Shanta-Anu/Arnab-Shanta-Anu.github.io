@@ -11,12 +11,16 @@ body {
     height: 10vh;
     width: 100vw;
     display: flex;
-    flex-direction: row-reverse;
     flex-wrap: nowrap;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
 
     .navbar-logo {
       color: blue;
+      background: papayawhip;
+      height: inherit;
+      width: 10vw;
     }
 
     .navbar-slogan {
