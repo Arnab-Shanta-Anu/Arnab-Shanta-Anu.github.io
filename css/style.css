@@ -4,13 +4,12 @@
 }
 
 body {
-  display: flexbox;
   background: rgba(255, 33, 33, 0.664);
 }
 
 body .navbar {
   background: #7f5bc0;
-  height: 15vh;
+  height: 10vh;
   width: 100vw;
 }
 
@@ -22,18 +21,27 @@ body .navbar .navbar-slogan {
   color: white;
 }
 
-body .navbar .navitems .navitem-list .nav-item {
+body .navbar .navitems .navitem-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+body .navbar .navitems .navitem-list .nav-item {
+  padding: 0.3rem;
+  margin-top: 1.5vh;
 }
 
 body .navbar .navitems .navitem-list .nav-item .nav-link {
   font-size: 1.2rem;
-  padding: 0.3rem;
   text-decoration: none;
   color: bisque;
 }

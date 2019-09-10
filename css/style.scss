@@ -3,12 +3,11 @@
   padding: 0;
 }
 body {
-  display: flexbox;
   background: rgba(255, 33, 33, 0.664);
 
   .navbar {
     background: rgb(127, 91, 192);
-    height: 15vh;
+    height: 10vh;
     width: 100vw;
 
     .navbar-logo {
@@ -19,12 +18,15 @@ body {
     }
     .navitems {
       .navitem-list {
+        display: flex;
+        list-style: none;
+        flex-direction: row-reverse;
+        align-items: stretch;
         .nav-item {
-          display: flex;
-          flex: 0 1 auto;
+          padding: 0.3rem;
+          margin-top: 1.5vh;
           .nav-link {
             font-size: 1.2rem;
-            padding: 0.3rem;
             text-decoration: none;
             color: bisque;
           }
