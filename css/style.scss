@@ -21,10 +21,8 @@ body {
         display: flex;
         list-style: none;
         flex-direction: row-reverse;
-        align-items: stretch;
         .nav-item {
           padding: 0.3rem;
-          margin-top: 1.5vh;
           .nav-link {
             font-size: 1.2rem;
             text-decoration: none;

@@ -30,14 +30,10 @@ body .navbar .navitems .navitem-list {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
 }
 
 body .navbar .navitems .navitem-list .nav-item {
   padding: 0.3rem;
-  margin-top: 1.5vh;
 }
 
 body .navbar .navitems .navitem-list .nav-item .nav-link {
