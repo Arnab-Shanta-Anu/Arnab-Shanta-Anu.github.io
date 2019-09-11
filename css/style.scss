@@ -6,16 +6,7 @@
 body {
   background: rgba(255, 33, 33, 0.664);
 
-  .navbar {
-    background: rgb(127, 91, 192);
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-
+  .nav-container {
     .navbar-logo {
       color: blue;
       background: papayawhip;
@@ -27,23 +18,34 @@ body {
       color: white;
     }
 
-    .navitems {
-      .navitem-list {
-        display: flex;
-        list-style: none;
+    .navbar {
+      background: rgb(127, 91, 192);
+      height: 10vh;
+      width: 100vw;
+      display: flex;
+      flex-wrap: nowrap;
+      //align-items: center;
+      flex-direction: row-reverse;
+      //justify-content: space-evenly;
 
-        .nav-item {
-          padding: 0.3rem;
+      .navitems {
+        .navitem-list {
+          display: flex;
+          list-style: none;
 
-          .nav-link {
-            font-size: 1.2rem;
-            text-decoration: none;
-            color: bisque;
-          }
+          .nav-item {
+            padding: 0.3rem;
 
-          .nav-link:hover {
-            color: rgb(238, 174, 96);
-            transition: 0.8s all ease-in-out;
+            .nav-link {
+              font-size: 1.2rem;
+              text-decoration: none;
+              color: bisque;
+            }
+
+            .nav-link:hover {
+              color: rgb(238, 174, 96);
+              transition: 0.8s all ease-in-out;
+            }
           }
         }
       }

@@ -9,7 +9,18 @@ body {
   background: rgba(255, 33, 33, 0.664);
 }
 
-body .navbar {
+body .nav-container .navbar-logo {
+  color: blue;
+  background: papayawhip;
+  height: inherit;
+  width: 10vw;
+}
+
+body .nav-container .navbar-slogan {
+  color: white;
+}
+
+body .nav-container .navbar {
   background: #7f5bc0;
   height: 10vh;
   width: 100vw;
@@ -18,47 +29,30 @@ body .navbar {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
-body .navbar .navbar-logo {
-  color: blue;
-  background: papayawhip;
-  height: inherit;
-  width: 10vw;
-}
-
-body .navbar .navbar-slogan {
-  color: white;
-}
-
-body .navbar .navitems .navitem-list {
+body .nav-container .navbar .navitems .navitem-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
 
-body .navbar .navitems .navitem-list .nav-item {
+body .nav-container .navbar .navitems .navitem-list .nav-item {
   padding: 0.3rem;
 }
 
-body .navbar .navitems .navitem-list .nav-item .nav-link {
+body .nav-container .navbar .navitems .navitem-list .nav-item .nav-link {
   font-size: 1.2rem;
   text-decoration: none;
   color: bisque;
 }
 
-body .navbar .navitems .navitem-list .nav-item .nav-link:hover {
+body .nav-container .navbar .navitems .navitem-list .nav-item .nav-link:hover {
   color: #eeae60;
   -webkit-transition: 0.8s all ease-in-out;
   transition: 0.8s all ease-in-out;
