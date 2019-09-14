@@ -37,6 +37,12 @@ body .logo-container .navbar-slogan {
           flex-grow: 1;
 }
 
+body .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 body .navbar {
   background: #7f5bc0;
   height: 5vh;
