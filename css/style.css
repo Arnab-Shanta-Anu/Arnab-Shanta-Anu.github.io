@@ -83,4 +83,9 @@ body .navbar .navitems .navitem-list .nav-item .nav-link:hover {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
+
+.text-dummy {
+  text-align: center;
+  scrollbar-width: 0.5px;
+}
 /*# sourceMappingURL=style.css.map */
