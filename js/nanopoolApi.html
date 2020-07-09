@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <h1>Current Mining stats</h1>
+
+    <p>
+        1 eth = <span id="btc"></span> btc</br>
+        1 eth = <span id="usd"></span> usd</br>
+        current hashrate = <span id="currHashRate"></span> MH/s</br>
+        current balance = <span id="currBalance"></span> ETH(<span id="calBalUsd"></span> USD)<br>
+    </p>
+    
+    
+    <script>
+      const price_url = "https://api.nanopool.org/v1/eth/prices";
+      const curr_hash_rate_n_blnc = "https://api.nanopool.org/v1/eth/balance_hashrate/0x13E220022a409d843126CFaDD4265C8Bb8C9233e";
+      
+      getData();
+      getCurrHashRate();
+      
+      setInterval(getData, 300000);
+      setInterval(getCurrHashRate, 1000);
+
+      async function getData() {
+        const response = await fetch(price_url);
+        const data = await response.json();
+
+        document.getElementById("btc").textContent =  data.data.price_btc
+        document.getElementById("usd").textContent = data.data.price_usd
+        
+
+        console.log(data.data);
+      }
+
+    async function getCurrHashRate(){
+        const response = await fetch(curr_hash_rate_n_blnc);
+        const data = await response.json();
+
+        document.getElementById("currHashRate").textContent = data.data.hashrate;
+        document.getElementById("currBalance").textContent = data.data.balance;
+
+        console.log(data.data)
+    }
+
+    </script>
+  </body>
+</html>
