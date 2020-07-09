@@ -14,23 +14,33 @@
         1 eth = <span id="usd"></span> usd</br>
         current hashrate = <span id="currHashRate"></span> MH/s</br>
         current balance = <span id="currBalance"></span> ETH(<span id="calBalUsd"></span> USD)<br>
+        <span id="need"></span> Days needed to reach target(.05)<br>
     </p>
     
     
     <script>
+      var USD;
+      var HASHRATE;
+      var CURBAL;
+
       const price_url = "https://api.nanopool.org/v1/eth/prices";
       const curr_hash_rate_n_blnc = "https://api.nanopool.org/v1/eth/balance_hashrate/0x13E220022a409d843126CFaDD4265C8Bb8C9233e";
+      const calc_hash_rate= "https://api.nanopool.org/v1/eth/approximated_earnings/" + HASHRATE;
+      
       
       getData();
       getCurrHashRate();
+      getDailyBlnc();
       
       setInterval(getData, 300000);
       setInterval(getCurrHashRate, 1000);
+      setInterval(getDailyBlnc, 1000);
 
       async function getData() {
         const response = await fetch(price_url);
         const data = await response.json();
-
+        
+        USD = data.data.price_usd;
         document.getElementById("btc").textContent =  data.data.price_btc
         document.getElementById("usd").textContent = data.data.price_usd
         
@@ -38,14 +48,22 @@
         console.log(data.data);
       }
 
-    async function getCurrHashRate(){
+      async function getCurrHashRate(){
         const response = await fetch(curr_hash_rate_n_blnc);
         const data = await response.json();
 
         document.getElementById("currHashRate").textContent = data.data.hashrate;
         document.getElementById("currBalance").textContent = data.data.balance;
-
+        document.getElementById("calBalUsd").textContent = USD * data.data.balance;
         console.log(data.data)
+      }
+
+      async function getDailyBlnc(){
+        const response = await fetch(calc_hash_rate);
+        const data = await response.json();
+
+        document.getElementById("need").textContent = data.data.day.coins;
+
     }
 
     </script>
