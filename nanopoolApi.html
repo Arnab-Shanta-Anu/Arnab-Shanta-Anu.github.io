@@ -25,7 +25,7 @@
 
       const price_url = "https://api.nanopool.org/v1/eth/prices";
       const curr_hash_rate_n_blnc = "https://api.nanopool.org/v1/eth/balance_hashrate/0x13E220022a409d843126CFaDD4265C8Bb8C9233e";
-      const calc_hash_rate= "https://api.nanopool.org/v1/eth/approximated_earnings/" + HASHRATE;
+      
       
       
       getData();
@@ -45,25 +45,26 @@
         document.getElementById("usd").textContent = data.data.price_usd
         
 
-        console.log(data.data);
+        // console.log(data.data);
       }
 
       async function getCurrHashRate(){
         const response = await fetch(curr_hash_rate_n_blnc);
         const data = await response.json();
 
+        HASHRATE = data.data.hashrate;
         document.getElementById("currHashRate").textContent = data.data.hashrate;
         document.getElementById("currBalance").textContent = data.data.balance;
         document.getElementById("calBalUsd").textContent = USD * data.data.balance;
-        console.log(data.data)
+        // console.log(data.data)
       }
-
+  var calc_hash_rate = cancat("https://api.nanopool.org/v1/eth/approximated_earnings/", HASHRATE);
       async function getDailyBlnc(){
         const response = await fetch(calc_hash_rate);
         const data = await response.json();
 
         document.getElementById("need").textContent = data.data.day.coins;
-
+        console.log(data.data.day.coins);
     }
 
     </script>
