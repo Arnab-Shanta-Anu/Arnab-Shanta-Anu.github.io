@@ -1,8 +1,11 @@
+/* this section is for global css variables */
 :root {
   --font-nunito: "Nunito", sans-serif;
   --font-roboto: "Roboto", sans-serif;
+  --color-accent: #ff6600;
+  --color-primary: ;
 }
-
+/*  */
 * {
   margin: 0;
   padding: 0;
@@ -11,41 +14,46 @@
 body {
   width: 100vw;
   height: 100vh;
-  /* background-color: #ff007747; */
 }
 a {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 img {
   border-radius: 50%;
 }
-
-.container {
-  width: 100%;
-  height: 100%;
-}
-.img_container {
-  background-color: #f05321;
-  color: rgb(221, 214, 214);
-  width: 80%;
-  height: 40%;
-  margin: auto;
-  margin-top: 10vh;
-  box-shadow: 0px 0px 10px 0 #fcba21;
+button {
+  width: 25vw;
+  padding: 5vh;
+  border: none;
   font-family: var(--font-nunito);
 }
-.img_circle {
+button:hover {
+  background-color: black;
+  background-blend-mode: overlay;
 }
-.container_2 {
-  background-color: #024da1;
-  width: 85%;
-  height: 10%;
-  margin: auto;
-  margin-top: 20px;
-  box-shadow: 0px 0px 10px 0 #fcba21;
-  border-radius: 2em;
+
+.accent {
+  background-color: var(--color-accent);
+}
+.hero_section {
+  font-family: var(--font-nunito);
+
+  margin: 20px;
+}
+.img_section {
   display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.call_to_action {
+  display: flex;
+  justify-content: center;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
 }
 container_3 {
   background-color: #fcba21;
