@@ -4,7 +4,7 @@
   "description": "this repo is for the portfolio webpage",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css":"tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
   },
   "repository": {
     "type": "git",
