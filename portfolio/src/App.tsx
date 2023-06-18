@@ -32,9 +32,21 @@ function App() {
             </div>
           </div>
           <div className="">
-            <div className="text-3xl font-semibold top-0 left-0 w-32 h-32 border-t-4 border-l-4 border-yellow-500 rounded-md">
-              Projects
-            </div>
+            <div className="top-0 left-0 w-32 h-32 border-t-4 border-l-4 border-yellow-500 rounded-md"></div>
+            <h1 className="text-3xl font-bold">Projects</h1>
+            <br />
+            <h2 className="text-xl font-semibold text-blue-500">
+              <a href="">Mern Stack</a>
+            </h2>
+            <h2 className="text-xl font-semibold text-blue-500">
+              <a href="">Laravel-React</a>
+            </h2>
+            <h2 className="text-xl font-semibold text-blue-500">
+              <a href="">Python CLI</a>
+            </h2>
+            <h2 className="text-xl font-semibold text-blue-500">
+              <a href="">Kotlin-Android</a>
+            </h2>
           </div>
         </div>
       </div>
